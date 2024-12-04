@@ -1,6 +1,6 @@
 //libgralloc
 cc_library_shared {
-    name: "libgralloc.qti",
+    name: "libgralloc.vendor.qti",
     vendor: true,
     cflags: [
         "-Wno-sign-conversion",

@@ -11,7 +11,7 @@ LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 
 LOCAL_HEADER_LIBRARIES        := display_headers
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData libsync libgrallocutils \
+LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData.vendor libsync libgrallocutils \
                                  libgralloccore \
                                  android.hardware.graphics.mapper@2.0 \
                                  android.hardware.graphics.mapper@2.1 \
@@ -31,7 +31,7 @@ LOCAL_VENDOR_MODULE           := true
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_HEADER_LIBRARIES        := display_headers
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData libdl  \
+LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData.vendor libdl  \
                                   android.hardware.graphics.common@1.2 \
                                   android.hardware.graphics.mapper@2.0 \
                                   android.hardware.graphics.mapper@2.1 \
@@ -53,8 +53,8 @@ LOCAL_C_INCLUDES              := $(common_includes) \
                                  $(kernel_includes)
 
 LOCAL_HEADER_LIBRARIES        := display_headers
-LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData libdl libgrallocutils libion libgralloctypes \
-                                  libgralloc.qti libhidlbase \
+LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData.vendor libdl libgrallocutils libion libgralloctypes \
+                                  libgralloc.vendor.qti libhidlbase \
                                   android.hardware.graphics.mapper@2.1 \
                                   android.hardware.graphics.mapper@3.0 \
                                   android.hardware.graphics.mapper@4.0
@@ -81,7 +81,7 @@ LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_HEADER_LIBRARIES        := display_headers
 LOCAL_SHARED_LIBRARIES        := $(common_libs) \
                                   libhidlbase \
-                                  libqdMetaData \
+                                  libqdMetaData.vendor \
                                   libgrallocutils \
                                   libgralloccore \
                                   libsync \
@@ -109,7 +109,7 @@ LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_HEADER_LIBRARIES        := display_headers
 LOCAL_SHARED_LIBRARIES        := $(common_libs) \
                                   libhidlbase \
-                                  libqdMetaData \
+                                  libqdMetaData.vendor \
                                   libgrallocutils \
                                   libgralloccore \
                                   libsync \
@@ -138,7 +138,7 @@ LOCAL_MODULE_TAGS             := optional
 LOCAL_HEADER_LIBRARIES        := display_headers
 LOCAL_SHARED_LIBRARIES        := $(common_libs) \
                                  libhidlbase \
-                                 libqdMetaData \
+                                 libqdMetaData.vendor \
                                  libgrallocutils \
                                  libgralloccore \
                                  libgralloctypes \
